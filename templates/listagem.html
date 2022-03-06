@@ -1,0 +1,19 @@
+<td><a href="/carro/novo"> Inserir um novo carro </a></td>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Modelo</th>
+        <th>Categoria</th>
+        <th>Valor</th>
+    </tr>
+    {% for carro in lista %}
+        <tr>
+            <td>{{ carro.id }}</td>
+            <td>{{ carro.modelo }}</td>
+            <td>{{ carro.categoria }}</td>
+            <td>{{ carro.valor }}</td>
+            <td><a href="/carro/{{ carro.id }}">Editar</a></td>
+            <td><a href="/carro/remover/{{ carro.id }}">Remover</a></td>            
+        </tr>
+    {% endfor %}
+</table>

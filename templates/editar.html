@@ -1,0 +1,9 @@
+<form action="{{ url_for("editar") }}" method="post">
+<input type="hidden" id="id" name="id" value="{{ carro.id }}">
+<label for="modelo">Modelo:</label>
+<input type="text" id="modelo" name="modelo" placeholder="Escreva o modelo do carro: " value="{{ carro.modelo }}">
+<label for="categoria">Categoria:</label>
+<input type="text" id="categoria" name="categoria" placeholder="Escreva a categoria do carro: " value="{{ carro.categoria }}">
+<label for="valor">Valor: </label>
+<input type="text" id="valor" name="valor" placeholder="Escreva o preço do carro: " value="{{ carro.valor }}">
+<button type="submit">Salvar</button>

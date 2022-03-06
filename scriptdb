@@ -1,0 +1,24 @@
+CREATE TABLE carro(
+
+	id SERIAL NOT NULL,
+	modelo VARCHAR(255) NOT NULL,
+	categoria VARCHAR(255) NOT NULL,
+	valor FLOAT NOT NULL,
+	CONSTRAINT pk_carros PRIMARY KEY(id)
+
+);
+
+INSERT INTO carro (modelo,categoria,valor) VALUES
+
+	('Gol','Hatch','29999'),
+	('Fox','Hatch','35898'),
+	('Jetta','Sedan','90000'),
+	('Range Rover','SUV','383567'),
+	('Hilux','Caminhonete','200000'),
+	('Corolla','Sedan','85888'),
+	('Celta','Hatch','24898'),
+	('Calhambeque','Retro','999999'),
+	('Camaro','Esportivo','299999'),
+	('Onix','Hatch','75454');
+
+
